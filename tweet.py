@@ -13,7 +13,11 @@ chorrada_utils.check_credentials(api)
 pool_tweets = [
     "Cuidado, que va.",
     "No te jode...",
-    "Para cagar y no echar mierda."
+    "Para cagar y no echar mierda.",
+    "Mierda.",
+    "Gracioso, ¿eh?",
+    "Su puta madre.",
+    "Hay que joderse."
 ]
 
 # Hashtags to be added after the tweet main text
