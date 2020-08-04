@@ -133,3 +133,6 @@ credentials.py
 
 # Chorradas
 chorradas/
+
+# JetBrains
+.idea/
