@@ -13,9 +13,12 @@ chorradadeldia
 * I would also recommend setting up your own tweet texts in `pool_tweets` in the file `tweet.py`
 
 ## Tweet your meme/chorrada/image
-Create a `virtualenv`:
+Create a `virtualenv` and activate it:
 ```
 virtualenv venv
+```
+```
+source venv/bin/activate
 ```
 
 Install all necessary packages:
@@ -26,4 +29,9 @@ pip install -r requirements.txt
 Run the bot:
 ```
 python tweet.py
+```
+
+Deactivate your `virtualenv` when you are done:
+```
+deactivate
 ```
