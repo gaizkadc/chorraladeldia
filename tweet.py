@@ -18,7 +18,8 @@ pool_tweets = [
     "Su puta madre.",
     "Hay que joderse.",
     "Hostia. Mierda.",
-    "Eso es... lo que tú opinas, tío."
+    "Eso es... lo que tú opinas, tío.",
+    "Tocado y a la mierda."
 ]
 
 # Hashtags to be added after the tweet main text
