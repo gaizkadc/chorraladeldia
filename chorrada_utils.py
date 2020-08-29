@@ -83,6 +83,7 @@ def rename_images(folder_path):
     for _, file_name in enumerate(folder_files):
         final_file_name = str(uuid.uuid4())
         original_file_name, extension = os.path.splitext(file_name)
-        if extension.lower() == '.jpg' or extension.lower() == '.jpeg' or extension.lower() == '.png' or extension.lower() == '.gif':
+        extension = extension.lower()
+        if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.gif':
             final_file_path = folder_path + final_file_name + extension
             os.rename(folder_path + file_name, final_file_path)
