@@ -58,6 +58,9 @@ def get_image():
     final_image_name = str(uuid.uuid4())
     final_image_path = used_path + final_image_name + extension.lower()
     old_image_path = unused_path + images[0]
+
+    print('Old image path: ' + old_image_path)
+    print('Final image path: ' + final_image_path)
     os.rename(old_image_path, final_image_path)
 
     # Check image folders
@@ -79,11 +82,7 @@ def rename_images(folder_path):
     folder_files = os.listdir(folder_path)
     for _, file_name in enumerate(folder_files):
         final_file_name = str(uuid.uuid4())
-        print('Final file name: ' + final_file_name)
         original_file_name, extension = os.path.splitext(file_name)
-        print('Original file name: ' + original_file_name)
-        print('Extension: ' + extension)
         if extension.lower() == '.jpg' or extension.lower() == '.jpeg' or extension.lower() == '.png' or extension.lower() == '.gif':
             final_file_path = folder_path + final_file_name + extension
             os.rename(folder_path + file_name, final_file_path)
-            print('Final file path: ' + final_file_path)
