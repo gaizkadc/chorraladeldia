@@ -73,3 +73,17 @@ def check_unused_folder(unused_path, used_path):
     if len(unused_images) == 0:
         for _, image_name in enumerate(used_images):
             shutil.move(used_path + image_name, unused_path)
+
+# Rename all (jpg, png or gif) images in a folder
+def rename_images(folder_path):
+    folder_files = os.listdir(folder_path)
+    for _, file_name in enumerate(folder_files):
+        final_file_name = str(uuid.uuid4())
+        print('Final file name: ' + final_file_name)
+        original_file_name, extension = os.path.splitext(file_name)
+        print('Original file name: ' + original_file_name)
+        print('Extension: ' + extension)
+        if extension.lower() == '.jpg' or extension.lower() == '.jpeg' or extension.lower() == '.png' or extension.lower() == '.gif':
+            final_file_path = folder_path + final_file_name + extension
+            os.rename(folder_path + file_name, final_file_path)
+            print('Final file path: ' + final_file_path)
