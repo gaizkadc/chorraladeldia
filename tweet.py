@@ -1,6 +1,6 @@
 # Imports
 import chorrada_utils
-import os
+import pathlib
 
 
 # Main
@@ -30,7 +30,7 @@ hashtags = '\n#chorradadeldía'
 tweet = chorrada_utils.create_tweet(pool_tweets, hashtags)
 
 # Rename images in unused folder
-path = os.path.abspath(os.getcwd())
+path = str(pathlib.Path().absolute())
 unused_path = path + '/chorradas/unused/'
 chorrada_utils.rename_images(unused_path)
 
