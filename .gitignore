@@ -136,3 +136,5 @@ chorradas/
 
 # JetBrains
 .idea/
+
+.DS_Store
