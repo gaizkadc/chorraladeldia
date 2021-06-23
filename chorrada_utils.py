@@ -62,7 +62,7 @@ def get_image(logger):
 
     # Move image
     # images = os.listdir(unused_path)
-    images = [img for img in os.listdir(unused_path) if (img.endswith('.png') or img.endswith('.jpg')) or img.endswith('.gif')]
+    images = [img for img in os.listdir(unused_path) if (img.endswith('.png') or img.endswith('.jpg')) or img.endswith('.gif') or img.endswith('.webp')]
     old_image, extension = os.path.splitext(unused_path + images[0])
     if extension == 'jpeg':
         extension = 'jpg'
