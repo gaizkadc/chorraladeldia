@@ -110,6 +110,6 @@ def create_caption(logger, quotes_file_path):
 
     caption = random.choice(quotes)
 
-    logger.info('caption obtaine')
+    logger.info('caption obtained')
 
     return caption

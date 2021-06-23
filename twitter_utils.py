@@ -47,7 +47,7 @@ def twitter_login(logger, credentials):
 
 def create_tweet(logger, caption, hashtags):
     logger.info('creating tweet')
-    tweet = '"' + caption + '"' ++ hashtags
+    tweet = '"' + caption + '"' + hashtags
 
     logger.info('tweet created: ' + tweet)
 
