@@ -10,7 +10,23 @@ chorradadeldia
     - unused
     - used
 ```
-* I would also recommend setting up your own tweet texts in `pool_tweets` in the file `tweet.py`
+
+## Environment variables
+The bot takes environment variables that will be loaded from the `.env` file, which should look like:
+```
+APP_NAME=chorrada-del-dia
+LOGS_FOLDER_PATH=logs
+
+IMGS_FOLDER=chorradas
+QUOTES_FILE_PATH=quotes.txt
+
+TWITTER_POST=1
+
+TWITTER_CONSUMER_KEY=<consumer key>
+TWITTER_CONSUMER_SECRET=<consumer secret key>
+TWITTER_ACCESS_TOKEN=<access token>
+TWITTER_ACCESS_TOKEN_SECRET=<access token secret>
+```
 
 ## Tweet your meme/chorrada/image
 Create a `virtualenv` and activate it:
@@ -28,7 +44,7 @@ pip install -r requirements.txt
 
 Run the bot:
 ```
-python tweet.py
+python chorrada-del-dia.py
 ```
 
 Deactivate your `virtualenv` when you are done:
